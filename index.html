@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            caption-side: top;
+        }
+        
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #2c3e50;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .subject-header {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .total-row {
+            background-color: #95a5a6;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .grade-a {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .grade-b {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        
+        .grade-c {
+            color: #f39c12;
+            font-weight: bold;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Semester Grade Report - Fall 2024</caption>
+        
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Mathematics</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>History</th>
+                <th class="center">Average</th>
+                <th class="center">Grade</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>S001</td>
+                <td>Alice Johnson</td>
+                <td class="center">92</td>
+                <td class="center">88</td>
+                <td class="center">95</td>
+                <td class="center">90</td>
+                <td class="center">91.25</td>
+                <td class="center grade-a">A</td>
+            </tr>
+            <tr>
+                <td>S002</td>
+                <td>Bob Smith</td>
+                <td class="center">85</td>
+                <td class="center">82</td>
+                <td class="center">88</td>
+                <td class="center">84</td>
+                <td class="center">84.75</td>
+                <td class="center grade-b">B</td>
+            </tr>
+            <tr>
+                <td>S003</td>
+                <td>Carol Martinez</td>
+                <td class="center">78</td>
+                <td class="center">91</td>
+                <td class="center">86</td>
+                <td class="center">89</td>
+                <td class="center">86.00</td>
+                <td class="center grade-b">B</td>
+            </tr>
+            <tr>
+                <td>S004</td>
+                <td>David Lee</td>
+                <td class="center">95</td>
+                <td class="center">93</td>
+                <td class="center">97</td>
+                <td class="center">94</td>
+                <td class="center">94.75</td>
+                <td class="center grade-a">A</td>
+            </tr>
+            <tr>
+                <td>S005</td>
+                <td>Emma Wilson</td>
+                <td class="center">88</td>
+                <td class="center">85</td>
+                <td class="center">90</td>
+                <td class="center">87</td>
+                <td class="center">87.50</td>
+                <td class="center grade-b">B</td>
+            </tr>
+            <tr>
+                <td>S006</td>
+                <td>Frank Brown</td>
+                <td class="center">76</td>
+                <td class="center">79</td>
+                <td class="center">75</td>
+                <td class="center">80</td>
+                <td class="center">77.50</td>
+                <td class="center grade-c">C</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr class="total-row">
+                <td colspan="2" class="right">Class Average:</td>
+                <td class="center">85.67</td>
+                <td class="center">86.33</td>
+                <td class="center">88.50</td>
+                <td class="center">87.33</td>
+                <td class="center">86.96</td>
+                <td class="center">B</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
